@@ -47,17 +47,31 @@ class Armor(object):
 
 ###################### Consumables ##################################
 
+#Hashed out code is for use testing purposes and is still in development
 class Consumable(object):
-    def __init__(self, name, cost, weight):
+    def __init__(self, name, cost, weight):#use, hungerEff):
         self.name = name
         self.cost = cost
         self.weight = weight
+        #self.use = use
+        #self.hungerEff = hungerEff
 
     def __str__(self):
         rep = self.name + "\n" + "Cost: " + str(self.cost) + "\n"
         return rep
-
-    #def use(self)
+ 
+    #def __use__(self):
+        #uses = self.use
+        #for i in uses:
+            #uses -= 1
+        #return uses
+    
+    #if self.use <= 1:
+        #print("self.use + " uses are available")
+        #self.use -= 1
+        #hungerEff += HungerLevel
+    #else:
+        #print("No more uses")
     
 ########################### Item Object #############################
 
@@ -148,7 +162,7 @@ class Inventory(object):
 
 #============ Adding spread sheet files to dictonaries ===================================================>
 
-
+#This Prints off the list of all items
 
 #Print functions for objects
 #print("====== Weapons =======")
