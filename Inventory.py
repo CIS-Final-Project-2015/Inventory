@@ -69,7 +69,7 @@ class Consumable(object):
     #if self.use <= 1:
         #print("self.use + " uses are available")
         #self.use -= 1
-        #hungerEff += HungerLevel
+        #hungerEff += BaseHunger
     #else:
         #print("No more uses")
     
